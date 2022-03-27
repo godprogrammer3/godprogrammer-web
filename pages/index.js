@@ -10,6 +10,7 @@ import Divider from "@mui/material/Divider";
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
+import LightModeIcon from "@mui/icons-material/LightMode";
 import iconDarkImage from "../public/icon_dark.png";
 import iconLightImage from "../public/icon_light.png";
 import profileImage from "../public/profile_image.png";
@@ -52,7 +53,7 @@ export default function Home() {
                 <h3>odprogrammer</h3>
               </Box>
               <IconButton aria-label="delete" onClick={onToggleColorMode}>
-                <DarkModeIcon />
+                {!isDarkMode ? <DarkModeIcon /> : <LightModeIcon />}
               </IconButton>
             </Toolbar>
           </AppBar>
