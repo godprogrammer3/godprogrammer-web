@@ -75,7 +75,7 @@ export default function Home() {
           Infra.
         </p>
         <p>
-          I’m a last year student of Computer Engineering King Mongkut's
+          I’m a last year student of Computer Engineering King Mongkut’s
           Institute of Technology Ladkrabang
         </p>
         <p>I’m currently looking for a Fullstack Developer job.</p>
