@@ -13,6 +13,9 @@ const theme = {
       main: red.A400,
     },
   },
+  typography: {
+    fontFamily: "Fira Code, monospace",
+  },
 };
 
 export default theme;
