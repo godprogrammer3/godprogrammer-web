@@ -15,7 +15,7 @@ import iconDarkImage from "../public/icon_dark.png";
 import iconLightImage from "../public/icon_light.png";
 import profileImage from "../public/profile_image.png";
 import Chip from "@mui/material/Chip";
-
+import Script from 'next/script';
 export default function Home() {
   const colorMode = useContext(ColorModeContext);
   const [isDarkMode, setDarkMode] = useState(false);
@@ -124,6 +124,19 @@ export default function Home() {
       <Box sx={{ textAlign: "center", p: "1rem" }}>
         Developed by Godprogrammer with Next.js
       </Box>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-2FR3H4NVLT"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+       
+         gtag('config', 'G-2FR3H4NVLT');
+        `}
+      </Script>
     </div>
   );
 }
